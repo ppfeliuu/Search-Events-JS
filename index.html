@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Events</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+        <a class="navbar-brand" href="#">Search events</a>
+    </nav> 
+     <div class="container buscador">
+               <div id="search" class=" card card-body">
+                   <h1 class="text-center">Search Events in your city</h1>
+
+                   <div class="form-group">
+                        <label for="exampleSelect1">Search by events or city</label>
+                        <input type="text" id="event" class="form-control" placeholder="Search by event name, music band or singer"> 
+                    </div>
+                     
+                   <div class="form-group">
+                        <label for="exampleSelect1">Category</label>
+                        <select class="form-control" id="list-categories"></select>
+                    </div>
+
+
+                   <input type="submit" class="mt-5 form-control btn btn-success" id="searchBtn" value="Find">
+               </div>  
+               <div id="result-events" class="row mt-5"></div>
+           </div>
+       
+           <footer class="mt-5 p-3 text-center bg-primary">
+               Search events &copy;
+           </footer>
+       
+          <script src="js/eventbrite.js"></script>
+          <script src="js/interface.js"></script>
+          <script src="js/app.js"></script>
+           <style>
+                .texto-info {
+                   font-weight: bold;
+                   margin-top: 30px;
+                }
+                footer {
+                     color: white;
+                }
+           </style>
+</body>
+</html>
